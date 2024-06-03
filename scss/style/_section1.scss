@@ -1,0 +1,87 @@
+section {
+    background-image: url(../images/greece.png);
+    background-color: blue;
+    background-size: cover;
+    background-position: center;
+    max-width: 1440px;
+    height: 606px;
+    .greece {
+        @include myflex (column, center, center);
+        max-width: 1440px ;
+        height: 606px;
+        h1 {color: #FFF;
+            font-family: Helvetica;
+            font-size: 79px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            @media (max-width:800px) {font-size: 39px;}
+        }
+        h2 {
+            color: #FFF;
+            font-family: Helvetica;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            @media (max-width:800px) {font-size: 10px;}
+        }
+    }
+    
+}
+.container {
+    @include mycontainer;
+    .threepart{
+        @include myflex(row, space-between, flex-start);
+        padding: 84px 0 0 84px;
+        @media (max-width:700px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .discover {
+            @include myflex (column, flex-start,flex-start);
+            max-width: 318px;
+            gap: 20px;
+            h3 {
+                @include fonts;
+                color: #636060;
+                font-size: 17px;
+            }
+            h4 {
+                @include fonts;
+                color: #010101;
+                font-size: 28px;
+            }
+            p {
+                @include fonts;
+                color: #636060;
+                font-size: 20px;
+            }
+        }
+        .cards {
+            @include myflex(row, center, center, wrap);
+            max-width : 1022px;
+            gap: 33px;
+            margin-bottom: 140px;
+            @media (max-width:700px) {
+                flex-direction: column;
+            }
+            .card {
+                @include myflex (column,flex-start,flex-start);
+                width: 286px;
+                gap: 20px;
+                h5 {
+                    @include fonts;
+                    color:  #343232;
+                    font-size: 19px;
+                }
+                p {
+                    @include fonts;
+                    color: #636060;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

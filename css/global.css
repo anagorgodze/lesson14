@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 10px 78px;
+}
+header .container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+@media (max-width: 1400px) {
+  header .container {
+    width: 90%;
+  }
+}
+header .container .logo {
+  width: 33px;
+  height: 42px;
+  display: flex;
+}
+@media (max-width: 700px) {
+  header .container nav {
+    display: none;
+  }
+}
+header .container nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+header .container nav ul a {
+  color: #636060;
+  font-family: Helvetica;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+header .container .fa-bars {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  header .container .fa-bars {
+    display: block;
+  }
+}
+
+section {
+  background-image: url(../images/greece.png);
+  background-color: blue;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 606px;
+}
+section .greece {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  max-width: 1440px;
+  height: 606px;
+}
+section .greece h1 {
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 79px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media (max-width: 800px) {
+  section .greece h1 {
+    font-size: 39px;
+  }
+}
+section .greece h2 {
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 800px) {
+  section .greece h2 {
+    font-size: 10px;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FFF;
+}
+@media (max-width: 1400px) {
+  .container {
+    width: 90%;
+  }
+}
+.container .threepart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  padding: 84px 0 0 84px;
+}
+@media (max-width: 700px) {
+  .container .threepart {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container .threepart .discover {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  max-width: 318px;
+  gap: 20px;
+}
+.container .threepart .discover h3 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #636060;
+  font-size: 17px;
+}
+.container .threepart .discover h4 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #010101;
+  font-size: 28px;
+}
+.container .threepart .discover p {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #636060;
+  font-size: 20px;
+}
+.container .threepart .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1022px;
+  gap: 33px;
+  margin-bottom: 140px;
+}
+@media (max-width: 700px) {
+  .container .threepart .cards {
+    flex-direction: column;
+  }
+}
+.container .threepart .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 286px;
+  gap: 20px;
+}
+.container .threepart .cards .card h5 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #343232;
+  font-size: 19px;
+}
+.container .threepart .cards .card p {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #636060;
+  font-size: 20px;
+}/*# sourceMappingURL=global.css.map */
